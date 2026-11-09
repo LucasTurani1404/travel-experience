@@ -1,7 +1,7 @@
-const formulário = document.querySelector(#formCadastro);
+const formulário = document.querySelector("#formCadastro");
 
-formulario.addEvenlistener("submit", function(event){
-    event.preventDefalt();
+formulario.addEvenListener("submit", function(event){
+    event.preventDefault();
 
     const nome = document.querySelector("#nome").value;
     const destino = document.querySelector("#destino").value;
@@ -11,5 +11,5 @@ formulario.addEvenlistener("submit", function(event){
     mensagem.textContent =
     "Olá, " + nome + "! Sua próxima aventura será em " + destino + "!";
 
-    formulário.reset();
-})
+    formulario.reset();
+});
