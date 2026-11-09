@@ -1,23 +1,15 @@
-const botaoCriar = document.getElementById("botaoCriar");
-const botaoApagar = document.getElementById("botaoApagar");
-const retorno = document.getElementById("retorno");
+const formEstilo = document.getElementById("formEstilo");
+const campoCor = document.getElementById("campoCor");
+const campoPadding = document.getElementById("campoPadding");
+const campoTamanho = document.getElementById("campoTamanho");
+const retorno = document.getElementById ("retorno");
 
-const frases = [
-    "Você está arrasando! 🚀",
-    "Hora de codar! 💻",
-    "Café, código e criatividade! ☕",
-    "JavaScript é mágica! 🌟"
+function aplicarEstilo(event){
+    event.preventdefault();
 
-];
+    retorno.style.color = campoCor.value;
+    retorno.style.padding = campoPadding.value + "px";
+    retorno.style.fontSize = campoTamanho.value + "px";
+}
 
-const cores = ["#fde68a", "#bfdbfe", "#bbf7d0", "#fbcfe8"];
-
-botaoCriar.addEventListener("click", () => {
-    const i = Math.floor(Math.random() * frases.length);
-    retorno.textContent = frases[i];
-    retorno.style.backgroundColor = cores[i];
-    retorno.style.fontSize = "24px";
-    retorno.style.padding = "15px";
-    retorno.style.borderRadius = "10px";
-    retorno.style.textAlign = "center";
-});
+formEstilo.addEventListener("submit", aplicarEstilo);

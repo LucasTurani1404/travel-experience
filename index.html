@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="/CSS/style.CSS">
 </head>
 <body>
-   <main class="container">
-    <h1>Gerador de frases</h1>
+   
+<main class="container">
+    <h1>Personalizador de texto</h1>
 
-    <button id="botaoCriar">Criar Frase</button>
-    <br><br>
-    <button id="botaoApagar">Apagar Tudo</button>
-    <br><br>
-    <p id="retorno"></p>
-   </main>
+    <form id="FormEstilo">
+        <label for="campoCor">Cor (nome ou hex):</label><br><br>
+       <input type="text" id="campoCor" placeholder="ex: red ou #ff0000"><br><br>
+
+       <label for="campoPadding">Padding (px):</label><br><br>
+       <input type="number" id="campoPadding" placeholder="ex: 10"><br><br>
+
+       <label for="campoTamanho">Tamanho da letra (px)</label><br><br>
+       <input type="number" id="campoTamanho" placeholder="ex:20"><br><br>
+       <button type="submit">Aplicar</button>
+    </form>
+    <p id="retorno">Esta é sua mensagem!</p>
+</main>
 
 <script src="/js/script.js"></script>
 </body>
