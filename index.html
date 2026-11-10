@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão com JavaScript</title>
     <link rel="stylesheet" href="/CSS/style.CSS">
+    <title>Cálculo</title>
 </head>
 <body>
-   
-<main class="container">
-    <h1>Personalizador de texto</h1>
 
-    <form id="FormEstilo">
-        <label for="campoCor">Cor (nome ou hex):</label><br><br>
-       <input type="text" id="campoCor" placeholder="ex: red ou #ff0000"><br><br>
+    <h2>Cálculo</h2>
 
-       <label for="campoPadding">Padding (px):</label><br><br>
-       <input type="number" id="campoPadding" placeholder="ex: 10"><br><br>
+<form id="calculadora">
+    <label for="numero1">Primeiro Número:</label><br><br>
+    <input type="number" id="numero1" placeholder="Ex: 10"><br><br>
+    <label for="numero2">Segundo Número:</label><br><br>
+    <input type="number" id="numero2" placeholder="ex: 10"><br><br>
+    <button type="submit">Somar</button>
+</form>
 
-       <label for="campoTamanho">Tamanho da letra (px)</label><br><br>
-       <input type="number" id="campoTamanho" placeholder="ex:20"><br><br>
-       <button type="submit">Aplicar</button>
-    </form>
-    <p id="retorno">Esta é sua mensagem!</p>
-</main>
+<p id="resultadoCalculo"></p>
 
 <script src="/js/script.js"></script>
 </body>
