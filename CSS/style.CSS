@@ -1,46 +1,16 @@
-
-html{
-    font-size: 16px;
+.linha{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: 5px;
+    color: blue;
 }
 
-button{
-    font-size: 1rem;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 0.375rem;
+.caixa{
+    width: 400px;
     background-color: white;
-    color: #2563eb;
-    cursor: pointer;
-}
+    color: blue;
+    padding: quadrado;
 
-
-body{
-    margin: 0;
-    background-color: #f3f4f6;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.filho{
-    width: 90%;
-    min-width: 260px;
-    padding: 1rem;
-    background-color: #2563eb;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-.pai{
-    width: 50%;
-    min-width: 260px;
-    padding: 1.5em;
-    background-color: #e5e7eb;
-    color: white;
-    border-radius: 0,75rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-
-}
-p{
-    font-size: 1rem;
-}
-h1{
-    font-size: 2rem;
-    margin-top: 0;
 }
