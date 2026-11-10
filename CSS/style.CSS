@@ -1,16 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
 .linha{
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    border: 5px;
-    color: blue;
+    gap: 10px;
 }
 
 .caixa{
-    width: 400px;
-    background-color: white;
-    color: blue;
-    padding: quadrado;
-
+    width: 33%;
+    height: 100px;
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
+
