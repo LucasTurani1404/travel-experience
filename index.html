@@ -8,42 +8,49 @@
 </head>
 <body>
 
-    <header>
-        <h1>👕Loja de Roupas👕</h1>
-    </header>
-    <main class="carrosel">
+<header>
+    <h1>👕Loja de Roupas</h1>
+</header>
+<main class="area-contato">
+    <form class="formulario">
+        <h2>Fale com a gente</h2><br>
+        <label for="nome">Nome:</label><br><br>
+       <input type="text" id="nome" placeholder="Digite seu nome" required minlength="3"><br><br>
+       <label for="email">E-mail</label><br><br>
+       <input type="email" id="email" placeholder="seu@email.com" required><br><br>
+       <label for="telefone">Telefone:</label><br><br>
+       <input type="tel" id="telefone" placeholder="(51) 99999-9999"><br><br>
+       <label for="nascimento">Data de Nascimento:</label><br><br>
+       <input type="date" id="nascimento" required><br><br>
+       <label for="tamanho">Tamanho (número de 34 a 46)</label><br><br>
+       <input type="number" id="tamanho" min="34" max="46" step="2" placeholder="ex: 38"><br><br>
+       <label for="produto">Produto de interesse</label>
+       <select id="produto" required>
+        <option value="">Escolha um produto</option>
+        <option value="Camiseta">Camiseta</option>
+        <option value="Calça">Calça</option>
+        <option value="Jaqueta">Jaqueta</option>
+        <option value="tenis">Tênis</option>
+        <option value="vestido">Vestido</option>
+       </select>
+       <fieldset>
+        <legend>Forma de contato preferida</legend>
+        <label><input type="radio" name="contato" value="email" checked>E-mail</label>
+        <label><input type="radio" name="contato" value="telefone">Telefone</label>
+        <label><input type="radio" name="contato" value="whatsapp">Whatsapp</label>
+       </fieldset>
+       <fieldset>
+        <legend>Interesses</legend>
+        <label><input type="checkbox" name="interesse" value="promocoes">Promoções</label>
+        <label><input type="checkbox" name="interesse" value="novidades">Novidades</label>
+        <label><input type="checkbox" name="interesse" value="eventos"></label>
+       </fieldset>
+       <label for="mensagem">Mensagem</label>
+       <textarea name="mensagem" id="mensagem" placeholder="Escreva sua dúvida" maxlength="200"></textarea>
 
-        <div class="trilho">
-       
-            <div class="slide">
-                <img src="/img/camisa-barcelona-home1-171394855dc44bb65917803628466061-1024-1024.webp" alt="Camisa do Barcelona 26/27">
-                <h2>Camisa do Barcelona 26/27</h2>
-                <p class="preco">R$ 249,99</p>
-            </div>
-            <div class="slide">
-                <img src="/img/calca-de-tactel-masculina-adulto-com-bolso-sports-basic-2p58007-umbro-67e5aa679c961.jpg" alt="Calça da Umbro">
-                <h2>Calça da Umbro</h2>
-                <p class="preco">R$ 150,90 </p>
-            </div>
-            <div class="slide">
-                <img src="/img/FD259-6-602-1-AW-800X1000.webp" alt="tenis jordan">
-                <h2>Tênis Jordan</h2>
-                <p class="preco">R$ 999,99</p>
-            </div>
-            <div class="slide">
-                <img src="/img/18f0012-007-vestido-feminino-longo-hiatto-verde-4.webp" alt="Vestido">
-                <h2>Vestido feminino</h2>
-                <p class="preco">R$249,99</p>
-            </div>
-            <div class="slide">
-                <img src="/img/674716.webp" alt="Jaqueta">
-                <h2>Jaqueta</h2>
-                <p class="preco">222,00</p>
-            </div>
-        </div>
-
-    </main>
-
+       <button type="submit">Enviar</button>
+    </form>
+</main>
 
 </body>
 </html>
